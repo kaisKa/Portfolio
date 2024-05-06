@@ -1,0 +1,20 @@
+accordion-group::ng-deep .btn-link {
+  color: white;
+}
+
+accordion-group::ng-deep .card-header {
+  background-color: #007bff;
+}
+
+button .btn-link {
+  flex: 1; /* Allow the text to take up remaining space */
+}
+
+button div:last-child {
+  margin-left: auto; /* Push the arrow container to the right */
+}
+
+.arrow-icon {
+  color: white;
+  margin-left: auto; /* This will push the arrow icon to the right */
+}

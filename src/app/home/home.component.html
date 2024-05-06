@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row">
+    <!-- About me -->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>About me</h2>
+        <img src="../../assets/me.png" alt="profile picture" width="256" height="256" class="rounded-circle">
+        <p> Dynamic software engineer specializing in backend development with Java
+          and Spring Boot. Over 6 years, I've led impactful projects in E-payment and
+          Telecommunications, impacting 5 million users. Skilled in microservices
+          architecture, I consistently achieve a 95% customer satisfaction rate. Ready to
+          apply my expertise and drive to innovate backend solutions
+
+        </p>
+      </div>
+    </div>
+    <!-- Feature project -->
+    <div class="col-lg shadow border m-1">
+      <div class="text-center">
+        <h2>Feature Project</h2>
+        <h4>{{featureProject.name}}</h4>
+          <carousel >
+            <div *ngFor="let imgUrl of featureProject.pictures">
+              <slide>
+                <img src={{imgUrl}} alt="first slide" style="display: block; width: 100%;">
+              </slide>
+            </div>
+          </carousel>
+
+        <p class="mt-2">{{featureProject.summery}}</p>
+        <p>Visit the portfolio section to leanr more</p>
+      </div>
+    </div>
+  </div>
+</div>

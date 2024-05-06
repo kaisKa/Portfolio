@@ -1,0 +1,112 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "name": "Authentication with Keycloak",
+      "summery": "keycloak authentication",
+      "description": "will be added later",
+      "projectLink": "will be added later",
+      "tags": [
+        {
+          "key": "Java",
+          "color": "blue"
+        },
+        {
+          "key": "Spring Boot",
+          "color": "green"
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "id": 1,
+      "name": "Authentication with Keycloak",
+      "summery": "keycloak authentication",
+      "description": "will be added later",
+      "projectLink": "will be added later",
+      "tags": [
+        {
+          "key": "Java",
+          "color": "blue"
+        },
+        {
+          "key": "Spring Boot",
+          "color": "green"
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "id": 2,
+      "name": "Authentication with Keycloak",
+      "summery": "keycloak authentication",
+      "description": "will be added later",
+      "projectLink": "will be added later",
+      "tags": [
+        {
+          "key": "Java",
+          "color": "blue"
+        },
+        {
+          "key": "Spring Boot",
+          "color": "green"
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "id": 3,
+      "name": "Authentication with Keycloak",
+      "summery": "keycloak authentication",
+      "description": "will be added later",
+      "projectLink": "will be added later",
+      "tags": [
+        {
+          "key": "Java",
+          "color": "blue"
+        },
+        {
+          "key": "Spring Boot",
+          "color": "green"
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "id": 4,
+      "name": "Authentication with Keycloak",
+      "summery": "keycloak authentication",
+      "description": "will be added later",
+      "projectLink": "will be added later",
+      "tags": [
+        {
+          "key": "Java",
+          "color": "blue"
+        },
+        {
+          "key": "Spring Boot",
+          "color": "green"
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "id": 5,
+      "name": "Authentication with Keycloak",
+      "summery": "keycloak authentication",
+      "description": "will be added later",
+      "projectLink": "will be added later",
+      "tags": [
+        {
+          "key": "Java",
+          "color": "blue"
+        },
+        {
+          "key": "Spring Boot",
+          "color": "green"
+        }
+      ],
+      "pictures": []
+    }
+  ]
+}

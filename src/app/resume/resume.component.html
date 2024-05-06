@@ -1,0 +1,111 @@
+<div class="container text-center">
+  <button (click)="downloadFile()" class="btn btn-primary mb-5 shadow border">Download Resume.pdf</button>
+
+
+  <div class="pb-2">
+    <accordion [isAnimated]="true" class="shadow">
+      <accordion-group [(isOpen)]="isWorkExperience">
+        <button class="btn btn-block d-flex justify-content-between align-items-center w-100" accordion-heading>
+          <div class="btn-link">Work Experience</div>
+          <div class="arrow-icon" *ngIf="!isWorkExperience">
+            >
+          </div>
+          <div class="arrow-icon" *ngIf="isWorkExperience">
+            v
+          </div>
+        </button>
+        <div style="text-align: left;">
+          <h2 class="mb-0">Back-end Engineer</h2>
+          <h3 class="text-primary">Techno Visions</h3>
+          <ul>
+            <li>potato potato potato potatopotato potato</li>
+            <li>potato potato potato potatopotato potato</li>
+            <li>potato potato potato potatopotato potato</li>
+            <li>potato potato potato potatopotato potato</li>
+          </ul>
+        </div>
+        <hr>
+        <div style="text-align: left;">
+          <h2 class="mb-0">Back-end Engineer</h2>
+          <h3 class="text-primary">Techno Visions</h3>
+          <ul>
+            <li>potato potato potato potatopotato potato</li>
+            <li>potato potato potato potatopotato potato</li>
+            <li>potato potato potato potatopotato potato</li>
+            <li>potato potato potato potatopotato potato</li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isEducation">
+        <button class="btn btn-block d-flex justify-content-between align-items-center w-100" accordion-heading>
+          <div class="btn-link">Education</div>
+          <div class="arrow-icon" *ngIf="!isEducation">
+            >
+          </div>
+          <div class="arrow-icon" *ngIf="isEducation">
+            v
+          </div>
+        </button>
+        <div style="text-align: left;">
+          <h2 class="mb-0">Bachelor degree in information technology</h2>
+          <h3 class="text-primary">Damascus University</h3>
+          <ul>
+            <li>Artificial intelligence</li>
+            <li>Artificial intelligence</li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isCertifiactions">
+
+        <button class="btn btn-block d-flex justify-content-between align-items-center w-100" accordion-heading>
+          <div class="btn-link">Certifiactions</div>
+          <div class="arrow-icon" *ngIf="!isCertifiactions">
+            >
+          </div>
+          <div class="arrow-icon" *ngIf="isCertifiactions">
+            v
+          </div>
+        </button>
+        <div style="text-align: left;">
+          <h3 class="mb-0">Distributed computing with Apache spark</h3>
+          <h4 class="text-primary">Coursera</h4>
+          <ul>
+            <li>Learned about ....</li>
+            <li>Learned about ....</li>
+            <li>Learned about ....</li>
+          </ul>
+        </div>
+      </accordion-group>
+      <accordion-group [(isOpen)]="isSkills">
+
+          <button class="btn btn-block d-flex justify-content-between align-items-center w-100" accordion-heading>
+            <div class="btn-link">Skills</div>
+            <div class="arrow-icon" *ngIf="!isSkills">
+              >
+            </div>
+            <div class="arrow-icon" *ngIf="isSkills">
+              v
+            </div>
+          </button>
+        <div class="row" style="text-align: left;">
+          <div class="col">
+            <h3>Languages: </h3>
+            <ul>
+              <li>Java</li>
+              <li>Kotlin</li>
+              <li>Type Script</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Framworks:</h3>
+            <ul>
+              <li>Spring Boot</li>
+              <li>NestJs</li>
+              <li>Angular</li>
+            </ul>
+          </div>
+        </div>
+      </accordion-group>
+    </accordion>
+  </div>
+</div>
