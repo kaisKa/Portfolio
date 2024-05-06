@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularPortfolioWebsite": {
+    "angular-deploy-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,10 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-portfolio-website",
+            "outputPath": "dist/angular-deploy-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
-
             "polyfills": [
               "zone.js"
             ],
@@ -26,16 +25,9 @@
               "src/assets"
             ],
             "styles": [
-
               "src/styles.css"
             ],
-            "scripts": [
-            ],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -65,10 +57,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "AngularPortfolioWebsite:build:production"
+              "buildTarget": "angular-deploy-app:build:production"
             },
             "development": {
-              "buildTarget": "AngularPortfolioWebsite:build:development"
+              "buildTarget": "angular-deploy-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +68,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "AngularPortfolioWebsite:build"
+            "buildTarget": "angular-deploy-app:build"
           }
         },
         "test": {
