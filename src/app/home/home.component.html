@@ -19,17 +19,20 @@
       <div class="text-center">
         <h2>Feature Project</h2>
         <h4>{{featureProject.name}}</h4>
-          <carousel >
-            <div *ngFor="let imgUrl of featureProject.pictures">
-              <slide>
-                <img src={{imgUrl}} alt="first slide" style="display: block; width: 100%;">
-              </slide>
-            </div>
-          </carousel>
-
-        <p class="mt-2">{{featureProject.summery}}</p>
-        <p>Visit the portfolio section to leanr more</p>
       </div>
+
+
+
+      <carousel>
+        <div *ngFor="let imgUrl of featureProject.pictures">
+          <slide>
+            <img src={{imgUrl}} alt="first slide" style="display: block; width: 100%;">
+          </slide>
+        </div>
+      </carousel>
+
+      <p class="mt-2">{{featureProject.summery}}</p>
+      <p>Visit the portfolio section to leanr more</p>
     </div>
   </div>
 </div>

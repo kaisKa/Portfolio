@@ -1,19 +1,21 @@
 <div class="card shadow text-center" style="max-width: 350px; min-width: 350px;;">
   <div class="card-body">
     <h5 class="card-title">{{project.name}}</h5>
-    <p class="card-text">{{project.summery}}</p>
-    <!-- <app-project-modal></app-project-modal> -->
-    <button class="btn btn-primary"  (click)="openModal()">view more</button>
+    <!-- <p class="card-text">{{project.summery}}</p> -->
+
+    <p>{{project.summery.split('\n')[0]}}<span *ngIf="isExpanded" class="hidden-text">{{project.summery.split('\n').slice(1).join('\n')}}</span> <span (click)="toggleExpanded()" class="show-more">{{
+        isExpanded ? '' : '...' }}</span></p>
+
+    <button class="btn btn-primary" (click)="openModal()">view more</button>
 
   </div>
   <div class="card-footer">
     <div class="d-flex flex-wrap justify-content-center">
       <div *ngFor="let tag of project.tags">
-        <div class="tag me-2 mb-1" [style.background-color]="tag.color">{{tag}}</div>
+        <div class="tag me-2 mb-1" [style.background-color]="tag.color">{{tag.key}}</div>
       </div>
 
 
     </div>
   </div>
 </div>
-

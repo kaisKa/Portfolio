@@ -13,7 +13,10 @@ import { AccordionModule } from 'ngx-bootstrap/accordion'
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, NavComponent, ProjectModalComponent, ModalModule, CarouselModule, CollapseModule, FormsModule, AccordionModule],
+  imports: [RouterOutlet, HeaderComponent, NavComponent,
+           ProjectModalComponent, ModalModule, CarouselModule,
+            CollapseModule, FormsModule, AccordionModule,
+            HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

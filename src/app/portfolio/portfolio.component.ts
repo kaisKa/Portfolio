@@ -35,8 +35,13 @@ export class PortfolioComponent implements OnInit {
     this.titleService.setTitle('Kais Alkotamy - Portoflio')
   }
   ngOnInit(): void {
-    this.projects = this.projectService.getProjects();
-
+    this.projectService.getProjects().subscribe({
+      next: res => {
+        this.projects = res
+        console.log("sdsa");
+      }
+    });
+    console.log("posdfs");
   }
 
   filter() {
@@ -69,7 +74,12 @@ export class PortfolioComponent implements OnInit {
 
     this.filtering = false;
 
-    this.projects = this.projectService.getProjects();
+    this.projectService.getProjects().subscribe({
+      next: res => {
+        this.projects = res
+        console.log("sdsa");
+      }
+    });
   }
 
 }

@@ -3,13 +3,13 @@ import { Title } from '@angular/platform-browser';
 import { ProjectsService } from '../_services/projects.service';
 import { Project } from '../_models/Project';
 import { CarouselConfig, CarouselModule } from 'ngx-bootstrap/carousel';
-import { NgFor } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CarouselModule,NgFor],
-  providers:[ { provide: CarouselConfig, useValue: { interval: 1500, noPause: true, showIndicators: true }}],
+  imports: [CarouselModule,CommonModule],
+  providers:[CarouselModule],// { provide: CarouselConfig, useValue: { interval: 1500, noPause: true, showIndicators: true }}],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -22,8 +22,11 @@ export class HomeComponent implements OnInit{
     this.titleService.setTitle('Kais Alkotamy - Home')
   }
   ngOnInit(): void {
-
-    this.featureProject = this.projectService.getProjectById(0)
+    this.projectService.getProjectById(1).subscribe({
+      next: pkj => {
+        this.featureProject = pkj;
+      }
+    });
   }
 
 

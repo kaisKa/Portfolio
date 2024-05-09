@@ -2,10 +2,10 @@
   "projects": [
     {
       "id": 0,
-      "name": "Authentication with Keycloak",
-      "summery": "keycloak authentication",
-      "description": "will be added later",
-      "projectLink": "will be added later",
+      "name": "Authentication Manager",
+      "summery": "This is a microsevice of \n a bigger system responsible for the authentication part of the system performe the basic Identification and Authentication functionality.",
+      "description": "This services is usecase of using Keycloak an IAM tool resposible of generating JWT and manage it, store passwords and manage them, manage roles, mange users and client. the service show case of a multi tenant appplication what is a multi tenant application ?? It is a system the has more than one kind of groub of user thad need to manage thier resources without affecting other tenant resources, think of that as a resedital building, each flat belong to an owner 'user' each flat has it own electricity and warter supplyments, also no budy can enter a flat without a unique key 'with in our service will represented by the JWT token'",
+      "projectLink": "https://github.com/kaisKa/authentication-manager",
       "tags": [
         {
           "key": "Java",
@@ -16,97 +16,44 @@
           "color": "green"
         }
       ],
-      "pictures": []
+      "pictures": ["../../assets/img.jpg", "../../assets/img2.jpg", "../../assets/img3.jpg"]
     },
     {
       "id": 1,
-      "name": "Authentication with Keycloak",
-      "summery": "keycloak authentication",
-      "description": "will be added later",
-      "projectLink": "will be added later",
+      "name": "nest-event-processor",
+      "summery": "Nest js application the showcase\n how to consume and produce to Event Hub of Azurem also how to use Service Bus",
+      "description": "This project is a Nest.js application built with TypeScript support. The system subscribes to an Azure Event Hub consumer upon startup, continuously listening for events representing sensor data from engines in a manufacturing environment. Upon receiving these events, the application processes them by sending the data to Azure Service Bus queues based on a criteria, which involves checking temperature thresholds. After sending the data to the queues, listeners are set up to consume these events and store them in MongoDB using Mongoose. Additionally, logging mechanisms using Winston are implemented to write logs to the console and to a retention file in the log directory.",
+      "projectLink": "https://github.com/kaisKa/nest-event-processor.git",
       "tags": [
         {
-          "key": "Java",
-          "color": "blue"
+          "key": "TypeScript",
+          "color": "blueviolet"
         },
         {
-          "key": "Spring Boot",
-          "color": "green"
+          "key": "Nest Js",
+          "color": "darkred"
         }
       ],
-      "pictures": []
+      "pictures": ["../../assets/archtecture.png"]
     },
     {
       "id": 2,
-      "name": "Authentication with Keycloak",
-      "summery": "keycloak authentication",
+      "name": "Portfolio",
+      "summery": "Simple Angular application that\n show case the use of Agular and demonstrate my experience with a portfolio website",
       "description": "will be added later",
-      "projectLink": "will be added later",
+      "projectLink": "https://github.com/kaisKa/Portfolio.git",
       "tags": [
         {
-          "key": "Java",
-          "color": "blue"
+          "key": "TypeScript",
+          "color": "blueviolet"
         },
         {
-          "key": "Spring Boot",
-          "color": "green"
+          "key": "Angular",
+          "color": "pink"
         }
       ],
-      "pictures": []
-    },
-    {
-      "id": 3,
-      "name": "Authentication with Keycloak",
-      "summery": "keycloak authentication",
-      "description": "will be added later",
-      "projectLink": "will be added later",
-      "tags": [
-        {
-          "key": "Java",
-          "color": "blue"
-        },
-        {
-          "key": "Spring Boot",
-          "color": "green"
-        }
-      ],
-      "pictures": []
-    },
-    {
-      "id": 4,
-      "name": "Authentication with Keycloak",
-      "summery": "keycloak authentication",
-      "description": "will be added later",
-      "projectLink": "will be added later",
-      "tags": [
-        {
-          "key": "Java",
-          "color": "blue"
-        },
-        {
-          "key": "Spring Boot",
-          "color": "green"
-        }
-      ],
-      "pictures": []
-    },
-    {
-      "id": 5,
-      "name": "Authentication with Keycloak",
-      "summery": "keycloak authentication",
-      "description": "will be added later",
-      "projectLink": "will be added later",
-      "tags": [
-        {
-          "key": "Java",
-          "color": "blue"
-        },
-        {
-          "key": "Spring Boot",
-          "color": "green"
-        }
-      ],
-      "pictures": []
+      "pictures": ["../../assets/img.jpg", "../../assets/img2.jpg", "../../assets/img3.jpg"]
     }
+
   ]
 }
