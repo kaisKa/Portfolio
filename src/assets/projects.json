@@ -21,12 +21,12 @@
     {
       "id": 1,
       "name": "nest-event-processor",
-      "summery": "Nest js application the showcase\n how to consume and produce to Event Hub of Azurem also how to use Service Bus",
+      "summery": "Nest js application that showcase\n how to consume and produce to Event Hub of Azure also how to use Service Bus",
       "description": "This project is a Nest.js application built with TypeScript support. The system subscribes to an Azure Event Hub consumer upon startup, continuously listening for events representing sensor data from engines in a manufacturing environment. Upon receiving these events, the application processes them by sending the data to Azure Service Bus queues based on a criteria, which involves checking temperature thresholds. After sending the data to the queues, listeners are set up to consume these events and store them in MongoDB using Mongoose. Additionally, logging mechanisms using Winston are implemented to write logs to the console and to a retention file in the log directory.",
       "projectLink": "https://github.com/kaisKa/nest-event-processor.git",
       "tags": [
         {
-          "key": "TypeScript",
+          "key": "Type Script",
           "color": "blueviolet"
         },
         {
@@ -44,7 +44,7 @@
       "projectLink": "https://github.com/kaisKa/Portfolio.git",
       "tags": [
         {
-          "key": "TypeScript",
+          "key": "Type Script",
           "color": "blueviolet"
         },
         {

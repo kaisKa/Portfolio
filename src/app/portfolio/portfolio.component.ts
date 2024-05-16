@@ -20,7 +20,7 @@ export class PortfolioComponent implements OnInit {
 
 
 
-  projects = {} as Project[]
+  projects:  Project[] = [];
 
   isCollapsed = true;
   filtering = false;
@@ -37,11 +37,12 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
     this.projectService.getProjects().subscribe({
       next: res => {
+        if(res.length === 0 )
+          console.log("it is an empty response");
         this.projects = res
-        console.log("sdsa");
       }
     });
-    console.log("posdfs");
+
   }
 
   filter() {
@@ -62,7 +63,14 @@ export class PortfolioComponent implements OnInit {
       this.filtering = true;
     else
       this.filtering = false;
-    this.projects = this.projectService.getProjectsByFilter(filterTags)
+    this.projectService.getProjectsByFilter(filterTags).subscribe({
+      next: res => {
+        this.projects = res;
+
+        console.log("response");
+        console.log(res);
+      }
+    })
   }
 
   resetFilter() {

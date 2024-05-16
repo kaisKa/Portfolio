@@ -31,34 +31,55 @@ export class ProjectsService {
     );
   }
 
+  getProjectsByFilter(filterTags: Tag[]): Observable<Project[]> {
+    return this.getProjects().pipe(
+      map(projects => {
+        let filteredProjects: Project[] = [];
+        projects.forEach(function (p) {
+          let foundAll = true;
 
+          filterTags.forEach(function (filterTag) {
+            if (!p.tags.some(tag => tag.key === filterTag.key))
+              foundAll = false;
+          })
 
-  getProjectsByFilter(filterTags: Tag[]) {
-    let filteredProjects: Project[] = [];
-    this.getProjects().subscribe({
-      next: res => {
-        this.projects = res
-        console.log("sdsa");
-      }
-    });
-    this.projects.forEach(function (project) {
-      let foundAll = true;
+          if (foundAll)
+            filteredProjects.push(p)
+        })
 
-      filterTags.forEach(function (filterTag) {
-        if (project.tags.includes(filterTag) == false)
-          foundAll = false;
+        return filteredProjects;
       })
-
-      if (foundAll)
-        filteredProjects.push(project)
-    })
-
-    return filteredProjects
+    )
   }
 
 
 
-  getProjects() {
+  // getProjectsByFilter(filterTags: Tag[]) {
+  //   let filteredProjects: Project[] = [];
+  //   this.getProjects().subscribe({
+  //     next: res => {
+  //       this.projects = res
+  //       this.projects.forEach(function (project) {
+  //         let foundAll = true;
+
+  //         filterTags.forEach(function (filterTag) {
+  //           if (project.tags.includes(filterTag) == false)
+  //             foundAll = false;
+  //         })
+
+  //         if (foundAll)
+  //           filteredProjects.push(project)
+  //       })
+  //     }
+  //   });
+
+
+  //   return filteredProjects
+  // }
+
+
+
+  getProjects(): Observable<Project[]> {
     return this.http.get<any>("assets/projects.json")
       .pipe(map(response => response.projects as Project[]))
     // .subscribe({
